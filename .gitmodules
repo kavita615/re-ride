@@ -1,0 +1,12 @@
+[submodule "src/Hooks/Shared"]
+	path = src/Hooks/Shared
+	url = https://github.com/Mobilecoderz-ReactNative/Hooks.git
+[submodule "src/Hooks/Shared-Hooks"]
+	path = src/Hooks/Shared-Hooks
+	url = https://github.com/Mobilecoderz-ReactNative/Hooks.git
+[submodule "src/Components/Components"]
+	path = src/Components/Components
+	url = https://github.com/Mobilecoderz-ReactNative/Components.git
+[submodule "src/Utils/Shared-Utils"]
+	path = src/Utils/Shared-Utils
+	url = https://github.com/Mobilecoderz-ReactNative/Utils.git
