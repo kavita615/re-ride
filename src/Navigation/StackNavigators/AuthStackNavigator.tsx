@@ -1,15 +1,16 @@
-import HomeScreen from 'src/Screens/Home/HomeScreen';
+// import HomeScreen from 'src/Screens/Home/HomeScreen';
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
+import NavigationDrawer from 'src/Navigation/Drawer/NavigationDrawer';
 
 const AuthStack = createStackNavigator();
 
 function AuthStackNavigator() {
   return (
-    <AuthStack.Navigator>
+    <AuthStack.Navigator initialRouteName={'Drawer'}>
       <AuthStack.Screen
-        name="Home"
-        component={HomeScreen}
+        name="Drawer"
+        component={NavigationDrawer}
         options={{headerShown: false}}
       />
     </AuthStack.Navigator>

@@ -58,6 +58,7 @@ class AppState extends ReactiveState {
   };
 
   logout = async () => {
+    console.log('kavita');
     await AsyncStorage.clear();
     this.resetState();
   };

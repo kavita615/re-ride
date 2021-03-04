@@ -14,6 +14,8 @@ import Header from 'src/Components/Header';
 import Container from 'src/Components/Shared/Container/Container';
 import Row from 'src/Components/Shared/Row/Row';
 import Spacer from 'src/Components/Shared/Spacer/Spacer';
+// import {useFocusEffect, useNavigation} from '@react-navigation/native';
+import {DrawerActions, useNavigation} from '@react-navigation/native';
 
 import Col from 'src/Components/Shared/Col/Col';
 import ScreenDropdown from 'src/Screens/CarScreen/ScreenDropdown';
@@ -42,6 +44,7 @@ function CarScreen() {
   const [vehicles, setVehicles] = useState([]);
   const [model, setModel] = useState('');
   const [selectedColor, setSelectedColor] = useState('');
+  const navigation = useNavigation();
 
   const brands = [
     {
@@ -212,7 +215,7 @@ function CarScreen() {
 
   return (
     <Container backgroundColor={'white'} fullScreen={true}>
-      <View style={{marginTop: 40}}>
+      <View style={{marginTop: 10}}>
         <Header leftImage={'menu'} rightImage={'magnifier'} />
       </View>
       <Spacer />
